@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PRACTICE" parallel="none" thread-count="3" >
+    <listeners>
+        <listener class-name="utilities.ExtentReport.ExtentReporter" />
+<!--        <listener class-name="utilities.RetryAnalyzer.RetryTransformer"/>-->
+    </listeners>
+
+    <test name="PRACTICE">
+        <parameter name="browser" value="CHROME"/>
+        <parameter name="system" value="qcl">
+
+            <groups>
+                <run>
+                    <include name="Test" />
+                </run>
+            </groups>
+
+            <classes>
+                <class name="testSuites.PracticeTestSuite">
+
+                </class>
+            </classes>
+
+        </parameter>
+    </test>
+
+</suite>
