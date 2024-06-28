@@ -17,7 +17,7 @@
             </groups>
 
             <classes>
-                <class name="testSuites.PracticeTestSuite">
+                <class name="testSuites.LoginTestSuite">
 
                 </class>
             </classes>
